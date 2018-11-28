@@ -1,0 +1,12 @@
+table{
+background-color: black;
+}
+
+body{
+color: white;
+}
+
+#bold_ins{
+font-weight: bold;
+text-decoration: underline;
+}

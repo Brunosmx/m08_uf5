@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Formulari</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1 align="center">Hoja de aventurero</h1>
+            <form action="http:/localhost/~tarda/form_rol.php" method="get" enctype="multipart/form-data">
+                <fieldset>
+                    <legend><b><ins>Información</ins></b></legend>
+                    
+                    <label for="id_text">Raza</label><br/>
+                    <input type="text" id="id_text" name="n_text" value="Elfo"/><br/>
+                    <label for="id_textarea">Equipo</label><br/>
+                    <textarea id="id_textarea" name="n_equipo" placeholder="Armas, mochila y otras posesiones"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b><ins>Características</ins></b></legend>
+
+                    <input type="radio" id="id_radio1" name="n_radio" value="a"/>Destreza
+                    <input type="radio" id="id_radio2" name="n_radio" value="c"/>Fuerza
+                    <input type="radio" id="id_radio3" name="n_radio" value="g"/>Inteligencia
+                </fieldset>
+
+                <fieldset>
+                    <legend><b><ins>Habilidades</ins></b></legend>
+
+                    <input type="checkbox" id="id_checkbox1" name="n_checkbox[]" value="a"/>Agilidad
+                    <input type="checkbox" id="id_checkbox2" name="n_checkbox[]" value="c"/>Conocimiento
+                    <input type="checkbox" id="id_checkbox3" name="n_checkbox[]" value="g"/>Manipulación
+                    <input type="checkbox" id="id_checkbox4" name="n_checkbox[]" value="t"/>Percepción
+                </fieldset>
+
+                <fieldset>
+                    <legend><b><ins>Magia</ins></b></legend>
+
+                    <label for="id_select"></label>
+                    <select id="id_select" name="n_select">
+                    <option value="default" >Duración</option>
+                    <option value="a">Alcance</option>
+                    <option value="c">Intensidad</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" id="id_submit" name="n_submit" value="Jugar"/>
+                    <input type="reset" id="id_reset" name="n_reset" value="Cancelar"/>
+                </fieldset>
+            </form>
+    </body>
+</html>
